@@ -4,10 +4,10 @@ namespace TQL_DataStructures {
 
     public class Stack<T> {
         private const int InitialSize = 8;
-        public Item<T> item { get; set; }
+        //public Item<T> item { get; set; }
         private Item<T>[] stack;
         private int Top = -1;
-        public int Count { get; private set; }
+        public int Count { get; private set; } = 0;
         private bool Full => Count == stack.Length;
         public bool Empty => Count == 0;
 
@@ -45,6 +45,7 @@ namespace TQL_DataStructures {
             }
             stack = newStack;
         }
+
         public Stack() {
             stack = new Item<T>[InitialSize];
         }
