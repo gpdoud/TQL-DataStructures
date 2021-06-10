@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TQL-DataStructures", "TQL-DataStructors\TQL-DataStructures.csproj", "{A414E6A6-13DF-4CA8-B6BF-0104D3D24BA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TQL-TestDataStructures", "TQL-TestDataStructures\TQL-TestDataStructures.csproj", "{928200F7-DF59-45E5-9AB3-9EE155EBADDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A414E6A6-13DF-4CA8-B6BF-0104D3D24BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A414E6A6-13DF-4CA8-B6BF-0104D3D24BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A414E6A6-13DF-4CA8-B6BF-0104D3D24BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A414E6A6-13DF-4CA8-B6BF-0104D3D24BA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{928200F7-DF59-45E5-9AB3-9EE155EBADDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{928200F7-DF59-45E5-9AB3-9EE155EBADDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{928200F7-DF59-45E5-9AB3-9EE155EBADDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{928200F7-DF59-45E5-9AB3-9EE155EBADDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F5822CB-36AE-44BC-9191-530234EA9580}
+	EndGlobalSection
+EndGlobal
