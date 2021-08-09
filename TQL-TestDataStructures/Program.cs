@@ -6,9 +6,20 @@ namespace TQL_TestDataStructures {
         static void Main(string[] args) {
 
             var queue = new Queue<int>();
-            queue.AddLast(1);
-            queue.AddLast(2);
-            queue.AddLast(3);
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+            queue.Enqueue(4);
+            queue.Enqueue(5);
+            queue.Enqueue(6);
+            queue.Enqueue(7);
+            queue.Enqueue(8);
+            queue.Dequeue();
+            queue.Dequeue();
+            queue.Dequeue();
+            while (!queue.Empty) {
+                Console.WriteLine($"{queue.Dequeue()}");
+            }
 
             //var stack = new Stack<int>();
             //for (var idx = 0; idx < 1000; idx++) {

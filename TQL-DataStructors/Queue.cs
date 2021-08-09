@@ -4,12 +4,17 @@ namespace TQL_DataStructures {
     public class Queue<T> {
         private const int InitialSize = 8;
         private Item<T>[] queue;
-        private int First = -1;
-        private int Last = -1;
         public int Count { get; set; } = 0;
         private bool Full => Count == queue.Length;
+        public bool Empty => Count == 0;
 
-        public void AddLast(T t) {
+        public T Dequeue() {
+            var item = queue[0];
+            Count--;
+            Reorg();
+            return item.t;
+        }
+        public void Enqueue(T t) {
             if (Full)
                 DoubleSize();
             if(Count == 0) {
@@ -17,19 +22,19 @@ namespace TQL_DataStructures {
                 return;
             }
             var tNew = new Item<T>(t);
-            var tLast = queue[Last];
-            queue[++Last] = tNew;
-            tLast.Next = Last;
-            tNew.Prev = Last - 1;
-            Count++;
+            queue[Count++] = tNew;
         }
 
         private void AddInitial(T t) {
             var q = new Item<T>(t);
             queue[0] = q;
-            First = 0;
-            Last = 0;
-            Count++;
+            Count = 1;
+        }
+
+        public void Reorg() {
+            for(var idx = 0; idx < queue.Length - 1; idx++) {
+                queue[idx] = queue[idx + 1];
+            }
         }
 
         private void DoubleSize() {
