@@ -21,13 +21,13 @@ namespace TQL_TestDataStructures {
                 Console.WriteLine($"{queue.Dequeue()}");
             }
 
-            //var stack = new Stack<int>();
-            //for (var idx = 0; idx < 1000; idx++) {
-            //    stack.Push(idx);
-            //}
-            //while (!stack.Empty) {
-            //    Console.Write($"{stack.Pop()},");
-            //}
+            var stack = new Stack<int>();
+            for(var idx = 0; idx < 100; idx++) {
+                stack.Push(idx);
+            }
+            while(!stack.Empty) {
+                Console.Write($"{stack.Pop()},");
+            }
         }
     }
 }
